@@ -19,7 +19,7 @@ from trl import(
     SFTTrainer,
 )
 
-from notes.examples.sftconfig import SFTConfig
+from .sftconfig import SFTConfig
 
 set_seed(42)
 
