@@ -1,5 +1,6 @@
 from dataclasses import dataclass, field
 from transformers import TrainingArguments
+from peft import LoraConfig
 from typing import Optional, Dict, Union, Any
 
 @dataclass
@@ -201,3 +202,4 @@ class SFTConfig(TrainingArguments):
         default=False,
         metadata={"help": "Monkey patch the model with Liger kernels to increase throughput and reduce memory usage."}
     )
+
